@@ -4,20 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!--Title should be more SEO-friendly by including the company name and what it does.-->
+
+    <!--Title should be more SEO-friendly by including the company name and what it does.-->  
+
     <title>SEO and Social Media Services - Horiseon</title>
 </head>
 
 <body>
+
     <!--The nav bar should be created within a nav element, possibly also nestled within a header element. So convert the div element with a "header" class into just a header element. Then reflect this change on the CSS.-->
 
     <header>
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <!-- Changed the div element to nav -->
+
+        <!-- Used the semantic abbr element instead of span -->
+
+        <h1>Hori<abbr title="Search Engine Optimisation">seo</abbr>n</h1>
+
+        <!-- Changed the div element to nav for the navigation bar -->
+
         <nav>
             <ul>
                 <li>
+
                     <!--This link did not work originally because the id indicated here was not set on the intended destination. -->
+
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
@@ -29,9 +39,12 @@
             </ul>
         </nav>
     </header>
+
     <div class="hero"></div>
     <div class="content">
+
         <!--Added the id here, which will then fix the previously defunct link on the nav bar. -->
+
         <div id="search-engine-optimization" class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
             <h2>Search Engine Optimization</h2>
@@ -54,7 +67,9 @@
             </p>
         </div>
     </div>
+
     <!--This section might have been better placed within an aside element for semantic purposes-->
+    
     <div class="benefits">
         <div class="benefit-lead">
             <h3>Lead Generation</h3>

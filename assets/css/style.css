@@ -1,5 +1,5 @@
 /* Global
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------*/
 
 * {
     box-sizing: border-box;
@@ -12,9 +12,10 @@ body {
 }
 
 /* Header
-----------------------------------------------------------*/
+------------------------------------------------------------------------------------*/
 
 /* Changed all .header class selectors to header element selectors */
+
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,11 +28,16 @@ header h1 {
     font-size: 48px;
 }
 
-header h1 .seo {
+/* Changed the .seo class to abbr element as a descendant selector. 
+text-decoration set to none to get rid of the dotted underline*/
+
+header h1 abbr {
     color: #d9dcd6;
+    text-decoration: none;
 }
 
-/* Changed all div selectors descendent from the header into nav */
+/* Changed all div selectors descendent from the header into nav element selectors */
+
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -55,7 +61,7 @@ a {
 }
 
 /* Main
-----------------------------------------------------------*/
+-------------------------------------------------------------------------------------*/
 
 p {
     font-size: 16px;
