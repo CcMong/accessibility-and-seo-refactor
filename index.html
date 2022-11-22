@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <!--The navigation bar should be created within a nav element, possibly also nestled within a header element. So convert the div element with a "header" class into just a header element. Then reflect this change on the CSS.-->
+    <!--The nav bar should be created within a nav element, possibly also nestled within a header element. So convert the div element with a "header" class into just a header element. Then reflect this change on the CSS.-->
 
-    <div class="header">
+    <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <!-- Changed the div element to nav -->
+        <nav>
             <ul>
                 <li>
                     <!--This link did not work originally because the id indicated here was not set on the intended destination. -->
@@ -26,8 +27,8 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
     <div class="hero"></div>
     <div class="content">
         <!--Added the id here, which will then fix the previously defunct link on the nav bar. -->
