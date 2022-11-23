@@ -12,7 +12,10 @@
 
 <body>
 
-    <!--The nav bar should be created within a nav element, possibly also nestled within a header element. So convert the div element with a "header" class into just a header element. Then reflect this change on the CSS.-->
+    <!--The nav bar should be created within a nav element, possibly also nestled within a header element. 
+        So convert the div element with a 'header' class into just a header element. 
+        Then reflect this change on the CSS.
+    -->
 
     <header>
 
@@ -40,7 +43,15 @@
         </nav>
     </header>
 
-    <div class="hero"></div>
+    <!--This div element below is purely for styling purposes in relation to the background image.
+        No other content within, else I would've used a span element within the div to style the image directly.
+        - 'hero' as a class name is not descriptive enough. So changed to 'background-pic'.
+        - Role of div element specified as 'img'
+        - Alt attributes cannot be added to background images. So used an aria-label instead for accessibility. 
+     -->
+
+    <div class="background-pic" role="img" aria-label="Digital Marketing Meeting"></div>
+
     <div class="content">
 
         <!--Added the id here, which will then fix the previously defunct link on the nav bar. -->
@@ -68,11 +79,12 @@
         </div>
     </div>
 
-    <!--This part is better placed within an aside element with an aria label for semantic purposes.
-    - The div element with 'benefits' class changed to an aside element. 
-    - All children div elements changed to section elements with the benefit-all class.
-    - The benefit-all class consolidated and replaced the previous benefit-lead/brand/cost classes.
-    - Alt attributes added to all image elements. Took out the Cost Management closing img tag -->
+    <!--This side bar part is better placed within an aside element with an aria label for semantics.
+        - The div element with 'benefits' class changed to an aside element. 
+        - All children div elements changed to section elements with the benefit-all class.
+        - The benefit-all class consolidated and replaced the previous benefit-lead/brand/cost classes.
+        - Alt attributes added to all image elements. Took out the Cost Management closing img tag 
+    -->
     
     <aside aria-label="Side bar">
 
@@ -103,7 +115,8 @@
     </aside>
 
     <!-- Changed from div elements with footer class to a footer element.
-    h2 element changed to h4, and legal/copyright info wrapped in a small element -->
+        h2 element changed to h4, and legal/copyright info wrapped in a small element. 
+    -->
 
     <footer>
         <h4>Made with ❤️️ by Horiseon</h4>

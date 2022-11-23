@@ -1,5 +1,5 @@
-/* Global
-----------------------------------------------------------------------------------*/
+/* GLOBAL
+-----------------------------------------------------------------------------------*/
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
     background-color: #d9dcd6;
 }
 
-/* Header
+/* HEADER
 ------------------------------------------------------------------------------------*/
 
 /* Changed all .header class selectors to header element selectors */
@@ -35,6 +35,8 @@ header h1 abbr {
     color: #d9dcd6;
     text-decoration: none;
 }
+
+/* => Nav Bar............*/
 
 /* Changed all div selectors descendent from the header element into nav element selectors */
 
@@ -60,21 +62,25 @@ a {
     text-decoration: none;
 }
 
-/*To change nav link colour slightly when hovered over*/
+/*For hover effect, nav link colour changes slightly when hovered over*/
 
 a:hover {
     background-color:#245268;
     padding: 25px;
 }
 
-/* Main
+/* MAIN
 -------------------------------------------------------------------------------------*/
+
+/* => Central section............*/
 
 p {
     font-size: 16px;
 }
 
-.hero {
+/*.hero class changed to background-pic */
+
+.background-pic {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -98,40 +104,6 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
-/* Sidebar.............*/
-
-/*Changed the div element to aside, and pointed the CSS to the aside element 
-Assigned a benefit-all class to consolidate benefit-lead, benefit-brand and benefit-cost */
-
-aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-all {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-all h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-all img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/*Main section............*/
 
 .search-engine-optimization {
     margin-bottom: 20px;
@@ -187,8 +159,40 @@ aside {
     font-size: 36px;
 }
 
-/* Footer
-----------------------------------------------------------*/
+/* => Sidebar.............*/
+
+/*Changed the div element to aside, and pointed the CSS to the aside element 
+Assigned a .benefit-all class to consolidate .benefit-lead, .benefit-brand and .benefit-cost */
+
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefit-all {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-all h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-all img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* FOOTER
+-------------------------------------------------------------------------------------*/
 
 /*footer class converted to footer element*/
 
