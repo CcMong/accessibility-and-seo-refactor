@@ -11,10 +11,14 @@ body {
     background-color: #d9dcd6;
 }
 
+p {
+    font-size: 16px;
+}
+
 /* HEADER
 ------------------------------------------------------------------------------------*/
 
-/* Changed all .header class selectors to header element selectors */
+        /* Changed all .header class selectors to header element selectors */
 
 header {
     padding: 20px;
@@ -28,17 +32,17 @@ header h1 {
     font-size: 48px;
 }
 
-/* Changed the .seo class to abbr element as a descendant selector. 
-The text-decoration property set to none to get rid of the dotted underline */
+        /* Changed the .seo class to abbr element as a descendant selector. 
+        The text-decoration property set to none to get rid of the dotted underline */
 
 header h1 abbr {
     color: #d9dcd6;
     text-decoration: none;
 }
 
-/* => Nav Bar............*/
+    /* => Nav Bar............*/
 
-/* Changed all div selectors descendent from the header element into nav element selectors */
+        /* Changed all div selectors descendent from the header element into nav element selectors */
 
 header nav {
     padding-top: 15px;
@@ -62,23 +66,20 @@ a {
     text-decoration: none;
 }
 
-/*For hover effect, nav link colour changes slightly when hovered over*/
+        /*For hover effect, nav link colour changes slightly when hovered over*/
 
 a:hover {
     background-color:#245268;
     padding: 25px;
 }
 
+
 /* MAIN
 -------------------------------------------------------------------------------------*/
 
-/* => Central section............*/
+    /* => Background Image........ */
 
-p {
-    font-size: 16px;
-}
-
-/*.hero class changed to background-pic */
+        /*.hero class changed to background-pic */
 
 .background-pic {
     height: 800px;
@@ -87,6 +88,16 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+    /* => Main Content............*/
+
+        /*Changed the .content class selector to main element selector */
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .float-left {
@@ -99,13 +110,9 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
+        /*Created the .main-content class to consolidate and replace the previous 3 class selectors. */
 
-.search-engine-optimization {
+.main-content {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -114,55 +121,19 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.main-content img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.main-content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    /* => Sidebar.............*/
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* => Sidebar.............*/
-
-/*Changed the div element to aside, and pointed the CSS to the aside element 
-Assigned a .benefit-all class to consolidate .benefit-lead, .benefit-brand and .benefit-cost */
+        /*Changed the div element to aside, and pointed the CSS to the aside element. 
+        Assigned a .benefit-all class to consolidate .benefit-lead, .benefit-brand and .benefit-cost */
 
 aside {
     margin-right: 20px;
@@ -194,7 +165,7 @@ aside {
 /* FOOTER
 -------------------------------------------------------------------------------------*/
 
-/*footer class converted to footer element*/
+        /*footer class converted to footer element*/
 
 footer {
     padding: 30px;
@@ -203,7 +174,7 @@ footer {
     text-align: center;
 }
 
-/* h2 element changed to h4 */
+        /* h2 element changed to h4 */
 
 footer h4 {
     font-size: 20px;

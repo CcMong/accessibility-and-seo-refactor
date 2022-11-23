@@ -12,9 +12,9 @@
 
 <body>
 
-    <!--The nav bar should be created within a nav element, possibly also nestled within a header element. 
+    <!--HEADER AND NAV BAR: The nav bar should be created within a nav element, within a header element. 
         So convert the div element with a 'header' class into just a header element. 
-        Then reflect this change on the CSS.
+        Then reflect this change in the CSS.
     -->
 
     <header>
@@ -33,18 +33,22 @@
 
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
+
                 <li>
                     <a href="#online-reputation-management">Online Reputation Management</a>
                 </li>
+
                 <li>
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
         </nav>
+
     </header>
 
-    <!--This div element below is purely for styling purposes in relation to the background image.
-        No other content within, else I would've used a span element within the div to style the image directly.
+
+    <!--BACKGROUND IMAGE: This div element below is purely for styling the background image.
+        No content within the div, so no need to put a span element within the div to style the image directly.
         - 'hero' as a class name is not descriptive enough. So changed to 'background-pic'.
         - Role of div element specified as 'img'
         - Alt attributes cannot be added to background images. So used an aria-label instead for accessibility. 
@@ -52,34 +56,45 @@
 
     <div class="background-pic" role="img" aria-label="Digital Marketing Meeting"></div>
 
-    <div class="content">
+    
+    <!--MAIN CONTENT: Converted the div element with 'content' class to main element.
+        - Also changed the child div elements to section elements.
+        - Then I created the 'main-content' class to consolidate the classes within the 3 child elements
+        - Added alt atttibutes to all three images
+     -->
 
-        <!--Added the id here, which will then fix the previously defunct link on the nav bar. -->
+    <main>
 
-        <div id="search-engine-optimization" class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+        <!--Added the id here, which will then fix the Search Engine Optimization link on the nav bar. -->
+
+        <div id="search-engine-optimization" class="main-content">
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Search Engine Optimization" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+
+        <div id="online-reputation-management" class="main-content">
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Online Reputation Management" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+
+        <div id="social-media-marketing" class="main-content">
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Social Media Marketing" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </div>
-    </div>
 
-    <!--This side bar part is better placed within an aside element with an aria label for semantics.
+    </main>
+
+
+    <!--SIDE BAR: This side bar part is better placed within an aside element with an aria label for semantics.
         - The div element with 'benefits' class changed to an aside element. 
         - All children div elements changed to section elements with the benefit-all class.
         - The benefit-all class consolidated and replaced the previous benefit-lead/brand/cost classes.
@@ -114,7 +129,8 @@
 
     </aside>
 
-    <!-- Changed from div elements with footer class to a footer element.
+
+    <!--FOOTER: Changed from div elements with footer class to a footer element.
         h2 element changed to h4, and legal/copyright info wrapped in a small element. 
     -->
 
@@ -124,6 +140,7 @@
            <small> &copy; 2019 Horiseon Social Solution Services, Inc. </small>
         </p>
     </footer>
+
 </body>
 
 </html>
