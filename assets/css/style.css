@@ -29,7 +29,7 @@ header h1 {
 }
 
 /* Changed the .seo class to abbr element as a descendant selector. 
-text-decoration set to none to get rid of the dotted underline*/
+The text-decoration property set to none to get rid of the dotted underline */
 
 header h1 abbr {
     color: #d9dcd6;
@@ -58,6 +58,13 @@ header nav ul li {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+/*To change nav link colour slightly when hovered over*/
+
+a:hover {
+    background-color:#245268;
+    padding: 25px;
 }
 
 /* Main
@@ -91,6 +98,8 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
+
+/* Sidebar.............*/
 
 .benefits {
     margin-right: 20px;
@@ -150,6 +159,8 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+
+/*Main section............*/
 
 .search-engine-optimization {
     margin-bottom: 20px;
