@@ -27,24 +27,32 @@ header {
     color: #ffffff;
 }
 
-header h1 {
+        /*As there is only one h1 element, the selector does not need to be so specific (as header h1).
+        So removed the other element selectors to leave just h1. */
+
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
         /* Changed the .seo class to abbr element as a descendant selector. 
-        The text-decoration property set to none to get rid of the dotted underline */
+        The text-decoration property set to 'none' to get rid of the dotted underline.
+        There is only one abbr element, so selector did not need to be so specific (as header h1 abbr).
+        So removed the other selectors to leave just abbr.  */
 
-header h1 abbr {
+abbr {
     color: #d9dcd6;
     text-decoration: none;
 }
 
     /* => Nav Bar............*/
 
-        /* Changed all div selectors descendent from the header element into nav element selectors */
+        /* Changed all div selectors descendent from the header element into nav element selectors
+        
+        There is only one nav element, and one ul element with an associated set of children li elements.
+        So we can be less specific by simply using nav, ul and li respectively as selectors */
 
-header nav {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -52,11 +60,11 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
+ul {
     list-style-type: none;
 }
 
-header nav ul li {
+li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -100,16 +108,6 @@ main {
     margin-left: 20px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
         /*Created the .main-content class to consolidate and replace the previous 3 class selectors. */
 
 .main-content {
@@ -120,12 +118,24 @@ main {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+        
 .main-content img {
     max-height: 200px;
 }
 
-.main-content h2 {
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+        /*Can be less specific using just h2 as selector without qualifying it with the main-content class. */
+
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -151,16 +161,20 @@ aside {
     color: #ffffff;
 }
 
-.benefit-all h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 .benefit-all img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+
+        /*Can be less specific with just h3 selector as it exists only under the benefit-all class. */
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
 
 /* FOOTER
 -------------------------------------------------------------------------------------*/
@@ -174,8 +188,9 @@ footer {
     text-align: center;
 }
 
-        /* h2 element changed to h4 */
+        /* h2 element changed to h4 
+        Can be less specific and use just h4 as element selector, as it only appears in the footer element. */
 
-footer h4 {
+h4 {
     font-size: 20px;
 }
