@@ -85,11 +85,11 @@ a:hover {
 /* MAIN
 -------------------------------------------------------------------------------------*/
 
-    /* => Background Image........ */
+    /* => Hero Image........ */
 
-        /*.hero class changed to background-pic */
+        /*.hero class changed to hero-image */
 
-.background-pic {
+.hero-image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
