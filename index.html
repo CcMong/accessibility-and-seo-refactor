@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!--Title should be more SEO-friendly by including the company name and what it does.-->  
+    <!--Title made more SEO-friendly, by including the company name and what it does.-->  
 
     <title>SEO and Social Media Services - Horiseon</title>
 </head>
@@ -13,15 +13,21 @@
 <body>
 
     <!--HEADER AND NAV BAR: The nav bar should be created within a nav element, within a header element. 
-        So convert the div element with a 'header' class into just a header element. 
-        Then reflect this change in the CSS.
+        So converted the div element with a 'header' class into just a header element. 
+        Then reflected this change in the CSS.
     -->
 
     <header>
 
-        <!-- Used the semantic abbr element instead of span -->
+        <!-- Used the semantic abbr element for 'seo' acronym in the heading, instead of span, and its meaning.
+            - I wrapped the other parts of the heading in span elements, and hid the contents from the screen reader using aria attribute.
+            - Then I put the heading name as an aria label in the h1 tag, and assigned h1 a "heading" role. 
+            - Doing all this ensures that a screen reader would read the company name/heading as one word, rather than as "Hori" "seo" "n" (according to the Accessibility Tree), while also allowing for styling.
+         -->
 
-        <h1>Hori<abbr>seo</abbr>n</h1>
+        <h1 role="heading" aria-label="Horiseon">
+            <span aria-hidden="true">Hori</span><abbr title="Search Engine Optimzation" aria-hidden="true">seo</abbr><span aria-hidden="true">n</span>
+        </h1>
 
         <!-- Changed the div element to nav for the navigation bar -->
 

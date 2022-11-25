@@ -7,6 +7,9 @@
     margin: 0;
 }
 
+/* BODY 
+-----------------------------------------------------------------------------------*/
+
 body {
     background-color: #d9dcd6;
 }
@@ -27,7 +30,7 @@ header {
     color: #ffffff;
 }
 
-        /*As there is only one h1 element, the selector does not need to be so specific (as header h1).
+        /*As there is only one h1 element, the selector does not need to be so specific ('header h1').
         So removed the other element selectors to leave just h1. */
 
 h1 {
@@ -37,7 +40,7 @@ h1 {
 
         /* Changed the .seo class to abbr element as a descendant selector. 
         The text-decoration property set to 'none' to get rid of the dotted underline.
-        There is only one abbr element, so selector did not need to be so specific (as header h1 abbr).
+        There is only one abbr element, so selector did not need to be so specific ('header h1 abbr').
         So removed the other selectors to leave just abbr.  */
 
 abbr {
@@ -45,7 +48,8 @@ abbr {
     text-decoration: none;
 }
 
-    /* => Nav Bar............*/
+
+    /* => Navigation Bar............*/
 
         /* Changed all div selectors descendent from the header element into nav element selectors
         
@@ -108,7 +112,7 @@ main {
     margin-left: 20px;
 }
 
-        /*Created the .main-content class to consolidate and replace the previous 3 class selectors. */
+        /*Created the .main-content class to consolidate and replace the previous 3 classes. */
 
 .main-content {
     margin-bottom: 20px;
@@ -179,16 +183,18 @@ h3 {
 /* FOOTER
 -------------------------------------------------------------------------------------*/
 
-        /*footer class converted to footer element*/
+        /*footer class selector changed to footer element selector.
+        Also added a dotted line to the top of the footer area to subtly demarcate the footer */
 
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    border-top: dotted silver;
 }
 
-        /* h2 element changed to h4 
+        /* h2 element changed to h4 for sequential ordering of heading attributes.
         Can be less specific and use just h4 as element selector, as it only appears in the footer element. */
 
 h4 {
