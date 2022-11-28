@@ -1,5 +1,6 @@
-/* GLOBAL
------------------------------------------------------------------------------------*/
+/* ===================================================================================
+GLOBAL
+======================================================================================*/
 
 * {
     box-sizing: border-box;
@@ -7,8 +8,9 @@
     margin: 0;
 }
 
-/* BODY 
------------------------------------------------------------------------------------*/
+/* ===================================================================================
+ BODY 
+======================================================================================*/
 
 body {
     background-color: #d9dcd6;
@@ -18,8 +20,9 @@ p {
     font-size: 16px;
 }
 
-/* HEADER
-------------------------------------------------------------------------------------*/
+/* ====================================================================================
+ HEADER
+=======================================================================================*/
 
         /* Changed all .header class selectors to header element selectors */
 
@@ -39,8 +42,8 @@ h1 {
 }
 
         /* Changed the .seo class to abbr element as a descendant selector. 
-        The text-decoration property set to 'none' to get rid of the dotted underline.
-        There is only one abbr element, so selector did not need to be so specific ('header h1 abbr').
+        - The text-decoration property set to 'none' to get rid of the dotted underline.
+        - There is only one abbr element, so selector did not need to be so specific ('header h1 abbr').
         So removed the other selectors to leave just abbr.  */
 
 abbr {
@@ -49,7 +52,9 @@ abbr {
 }
 
 
-    /* => Navigation Bar............*/
+    /* --------------------------------
+    => Navigation Bar
+    -----------------------------------*/
 
         /* Changed all div selectors descendent from the header element into nav element selectors
         
@@ -86,12 +91,15 @@ a:hover {
 }
 
 
-/* MAIN
--------------------------------------------------------------------------------------*/
+/* ==================================================================================
+ MAIN
+=====================================================================================*/
 
-    /* => Hero Image........ */
+    /* ----------------------------
+     => Hero Image
+     ------------------------------*/
 
-        /*.hero class changed to hero-image */
+        /*.hero class changed to .hero-image */
 
 .hero-image {
     height: 800px;
@@ -102,7 +110,9 @@ a:hover {
     background-position: center;
 }
 
-    /* => Main Content............*/
+    /* -----------------------------
+     => Main Content
+     -------------------------------*/
 
         /*Changed the .content class selector to main element selector */
 
@@ -137,16 +147,18 @@ main {
     margin-left: 25px;
 }
 
-        /*Can be less specific using just h2 as selector without qualifying it with the main-content class. */
+        /*Can be less specific by using just h2 as selector. Unnecessary to qualify it with the main-content class. */
 
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-    /* => Sidebar.............*/
+    /*-----------------------------
+     => Sidebar
+     ------------------------------*/
 
-        /*Changed the div element to aside, and pointed the CSS to the aside element. 
+        /*Changed the div element to an aside element, and pointed the CSS to the aside element. 
         Assigned a .benefit-all class to consolidate .benefit-lead, .benefit-brand and .benefit-cost */
 
 aside {
@@ -180,18 +192,17 @@ h3 {
 
 
 
-/* FOOTER
--------------------------------------------------------------------------------------*/
+/* ==================================================================================
+ FOOTER
+=====================================================================================*/
 
-        /*footer class selector changed to footer element selector.
-        Also added a dotted line to the top of the footer area to subtly demarcate the footer */
-
+        /*footer class selector changed to footer element selector.*/
+        
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    border-top: dotted silver;
 }
 
         /* h2 element changed to h4 for sequential ordering of heading attributes.
