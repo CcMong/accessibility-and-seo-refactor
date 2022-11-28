@@ -64,7 +64,7 @@ Therefore, businesses themselves also stand to profit from adhering to accessibi
 
 ## Installation
 
-The site was deployed using GitHub Pages.  
+The site was deployed using GitHub Pages. 
 
 
 ## Usage
@@ -75,7 +75,7 @@ The site layout is designed for desktop viewing, and is yet to be optimised for 
 
 [Link to the GitHub code repository]()
 
-![Mock-up of Horiseon Webpage](assets/images/screenshot.png "Horiseon Webpage")
+![Horiseon Webpage which has a navigation bar, a hero image, and content comprising images and test](assets/images/screenshot.png "Horiseon Webpage")
 
 
 ## Credits
