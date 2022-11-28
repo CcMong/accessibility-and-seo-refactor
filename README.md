@@ -64,18 +64,20 @@ Therefore, businesses themselves also stand to profit from adhering to accessibi
 
 ## Installation
 
-The site was deployed using GitHub Pages. 
+The site, linked below, was deployed using GitHub Pages. 
+
+Simply upload the index.html and license.txt files, along with the assets folder which contains the images and CSS file, to the desired webserver.
 
 
 ## Usage
 
-The site layout is designed for desktop viewing, and is yet to be optimised for use on other screen sizes or at a resolution smaller than 768px.
+The site layout, shown below, is designed for desktop viewing. It is yet to be optimised for use on other screen sizes or at a resolution smaller than 768px.
 
 [Link to the deployed Horiseon website]()
 
-[Link to the GitHub code repository]()
-
-![Horiseon Webpage which has a navigation bar, a hero image, and content comprising images and test](assets/images/screenshot.png "Horiseon Webpage")
+[Link to the GitHub code repository](https://github.com/CcMong/accessibility-and-seo-refactor)
+  
+![Horiseon Webpage which has a navigation bar, a hero image, and content comprising images and test](assets/images/horiseon-screenshot.png "Horiseon Webpage")
 
 
 ## Credits
@@ -95,7 +97,8 @@ Please refer to the LICENSE in the repo.
 
 ## Badges
 
-
+![GitHub](https://img.shields.io/github/license/CcMong/accessibility-and-seo-refactor)
+![GitHub issues](https://img.shields.io/github/issues-raw/CcMong/accessibility-and-seo-refactor)
 
 
 
