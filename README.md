@@ -73,7 +73,7 @@ Simply upload the index.html and license.txt files, along with the assets folder
 
 The site layout, shown below, is designed for desktop viewing. It is yet to be optimised for use on other screen sizes or at a resolution smaller than 768px.
 
-[Link to the deployed Horiseon website]()
+[Link to the deployed Horiseon website on GitHub Pages](https://ccmong.github.io/accessibility-and-seo-refactor/)
 
 [Link to the GitHub code repository](https://github.com/CcMong/accessibility-and-seo-refactor)
   
