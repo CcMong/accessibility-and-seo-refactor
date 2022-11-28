@@ -55,11 +55,11 @@ While the site is much more accessible and will now rank higher in the search en
 
 ### Lessons Learned
 
-Accessibility should be given a lot more focus by businesses with a web presence because, actually, everyone benefits from it. Impairment is not always permanent, but can also be temporary or situational. Measures taken to improve the experience of disabled users online end up impacting all users.
+Accessibility should be given a lot more focus by developers because, actually, everyone benefits from it. Impairment is not always permanent, but can also be temporary or situational. Measures taken to improve the experience of disabled users online end up impacting all users. Often, all it takes are basic things like properly structured markup and the use of semantically correct HTML to develop applications that have a greater and more inclusive impact.
 
 According to the [European Blind Union](https://www.euroblind.org/about-blindness-and-partial-sight/facts-and-figures), there are many potential customers (an estimated 30 million visually-impaired in the EU alone) that are either unserved or underserved because product and service providers do not have accessible web pages and applications.
 
-Therefore, businesses themselves also stand to profit from adhering to accessibility standards, as they can rank better in the search engines, influence the impression of their brand by improving collective user experience, and reach a currently overlooked customer base. 
+Therefore, businesses can profit from adhering to accessibility standards, as they can rank better in the search engines, influence the impression of their brand by improving collective user experience, and reach a currently overlooked customer base. 
 
 
 ## Installation
